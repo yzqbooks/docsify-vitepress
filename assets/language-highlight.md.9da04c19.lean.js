@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a as t}from"./app.fbe85f26.js";const m='{"title":"\u4EE3\u7801\u9AD8\u4EAE","description":"","frontmatter":{},"headers":[],"relativePath":"language-highlight.md"}',p={},e=t("",4),o=[e];function c(r,l,u,i,k,g){return n(),a("div",null,o)}var h=s(p,[["render",c]]);export{m as __pageData,h as default};

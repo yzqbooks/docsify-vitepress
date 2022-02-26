@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a,a as o}from"./app.fbe85f26.js";var i="/assets/icon.ced4be25.svg";const m='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"_coverpage.md"}',r={},s=o("",1),c=[s];function l(_,n,d,p,h,f){return a(),t("div",null,c)}var g=e(r,[["render",l]]);export{m as __pageData,g as default};

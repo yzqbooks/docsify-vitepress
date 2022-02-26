@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自定义插件 | docsify</title>
+    <meta name="description" content="Just playing around.">
+    <link rel="stylesheet" href="/assets/style.c3210e46.css">
+    <link rel="modulepreload" href="/assets/app.fbe85f26.js">
+    <link rel="modulepreload" href="/assets/write-a-plugin.md.3a443903.lean.js">
+    
+    <meta name="twitter:title" content="自定义插件 | docsify">
+  <meta property="og:title" content="自定义插件 | docsify">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-675d8756><div class="sidebar-button" data-v-675d8756><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/" aria-label="docsify, back to home" data-v-675d8756 data-v-cc01ef16><!----> docsify</a><div class="flex-grow" data-v-675d8756></div><div class="nav" data-v-675d8756><nav class="nav-links" data-v-675d8756 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>Guide <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/configuration" data-v-b8818f8c>Config Reference <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal" href="https://github.com/vuejs/vitepress/releases" target="_blank" rel="noopener noreferrer" data-v-b8818f8c>Release Notes <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-b8818f8c><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav></div><!--[--><!--]--></header><aside class="sidebar" data-v-83e92a68><nav class="nav-links nav" data-v-83e92a68 data-v-eab3edfe><!--[--><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/" data-v-b8818f8c>Guide <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item" href="/configuration" data-v-b8818f8c>Config Reference <!----></a></div></div><div class="item" data-v-eab3edfe><div class="nav-link" data-v-eab3edfe data-v-b8818f8c><a class="item isExternal" href="https://github.com/vuejs/vitepress/releases" target="_blank" rel="noopener noreferrer" data-v-b8818f8c>Release Notes <svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" data-v-b8818f8c><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div></div><!--]--><!----><!----></nav><!--[--><!--]--><ul class="sidebar-links" data-v-83e92a68><!--[--><li class="sidebar-link"><p class="sidebar-link-item">基础</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/">首页</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/quickstart">快速开始</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/more-pages">多页文档</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/custom-navbar">定制导航</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/cover">封面</a><!----></li></ul></li><li class="sidebar-link"><p class="sidebar-link-item">配置</p><ul class="sidebar-links"><li class="sidebar-link"><a class="sidebar-link-item" href="/configuration">配置项</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/themes">主题</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/plugins">使用插件</a><!----></li><li class="sidebar-link"><a class="sidebar-link-item" href="/markdown">markdown配置</a><!----></li></ul></li><!--]--></ul><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-7eddb2c4><div class="container" data-v-7eddb2c4><!--[--><!--]--><div style="position:relative;" class="content" data-v-7eddb2c4><div><h1 id="自定义插件" tabindex="-1">自定义插件 <a class="header-anchor" href="#自定义插件" aria-hidden="true">#</a></h1><p>docsify 提供了一套插件机制，其中提供的钩子（hook）支持处理异步逻辑，可以很方便的扩展功能。</p><h2 id="完整功能" tabindex="-1">完整功能 <a class="header-anchor" href="#完整功能" aria-hidden="true">#</a></h2><div class="language-js"><pre><code>window<span class="token punctuation">.</span>$docsify <span class="token operator">=</span> <span class="token punctuation">{</span>
+ <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">hook<span class="token punctuation">,</span> vm</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    hook<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 初始化时调用，只调用一次，没有参数。</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    hook<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">content</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 每次开始解析 Markdown 内容时调用</span>
+      <span class="token comment">// ...</span>
+      <span class="token keyword">return</span> content
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    hook<span class="token punctuation">.</span><span class="token function">afterEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">html<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 解析成 html 后调用。beforeEach 和 afterEach 支持处理异步逻辑</span>
+      <span class="token comment">// ...</span>
+      <span class="token comment">// 异步处理完成后调用 next(html) 返回结果</span>
+      <span class="token function">next</span><span class="token punctuation">(</span>html<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    hook<span class="token punctuation">.</span><span class="token function">doneEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 每次路由切换时数据全部加载完成后调用，没有参数。</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    hook<span class="token punctuation">.</span><span class="token function">mounted</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 初始化完成后调用 ，只调用一次，没有参数。</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    hook<span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 初始化并第一次加完成数据后调用，没有参数。</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+ <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>!&gt; 如果需要用 docsify 的内部方法，可以通过 <code>window.Docsify</code> 获取，通过 <code>vm</code> 获取当前实例。</p><h2 id="例子" tabindex="-1">例子 <a class="header-anchor" href="#例子" aria-hidden="true">#</a></h2><h3 id="footer" tabindex="-1">footer <a class="header-anchor" href="#footer" aria-hidden="true">#</a></h3><p>给每个页面的末尾加上 <code>footer</code></p><div class="language-js"><pre><code>window<span class="token punctuation">.</span>$docsify <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">hook</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> footer <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">&#39;&lt;hr/&gt;&#39;</span><span class="token punctuation">,</span>
+        <span class="token string">&#39;&lt;footer&gt;&#39;</span><span class="token punctuation">,</span>
+        <span class="token string">&#39;&lt;span&gt;&lt;a href=&quot;https://github.com/QingWei-Li&quot;&gt;cinwell&lt;/a&gt; &amp;copy;2017.&lt;/span&gt;&#39;</span><span class="token punctuation">,</span>
+        <span class="token string">&#39;&lt;span&gt;Proudly published with &lt;a href=&quot;https://github.com/docsifyjs/docsify&quot; target=&quot;_blank&quot;&gt;docsify&lt;/a&gt;.&lt;/span&gt;&#39;</span><span class="token punctuation">,</span>
+        <span class="token string">&#39;&lt;/footer&gt;&#39;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&#39;&#39;</span><span class="token punctuation">)</span>
+
+      hook<span class="token punctuation">.</span><span class="token function">afterEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">html</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> html <span class="token operator">+</span> footer
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="edit-button" tabindex="-1">Edit Button <a class="header-anchor" href="#edit-button" aria-hidden="true">#</a></h3><div class="language-js"><pre><code>window<span class="token punctuation">.</span>$docsify <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">hook<span class="token punctuation">,</span> vm</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      hook<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">html</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token string">&#39;https://github.com/docsifyjs/docsify/blob/master/docs&#39;</span> <span class="token operator">+</span> vm<span class="token punctuation">.</span>route<span class="token punctuation">.</span>file
+        <span class="token keyword">var</span> editHtml <span class="token operator">=</span> <span class="token string">&#39;[📝 EDIT DOCUMENT](&#39;</span> <span class="token operator">+</span> url <span class="token operator">+</span> <span class="token string">&#39;)\n&#39;</span>
+
+        <span class="token keyword">return</span> editHtml
+          <span class="token operator">+</span> html
+          <span class="token operator">+</span> <span class="token string">&#39;\n----\n&#39;</span>
+          <span class="token operator">+</span> <span class="token string">&#39;Last modified {docsify-updated} &#39;</span>
+          <span class="token operator">+</span> editHtml
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div><footer class="page-footer" data-v-7eddb2c4 data-v-07c132fc><div class="edit" data-v-07c132fc><div class="edit-link" data-v-07c132fc data-v-1ed99556><!----></div></div><div class="updated" data-v-07c132fc><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"readme.md\":\"a1a77185\",\"summary.md\":\"8f213245\",\"_coverpage.md\":\"37f9ab71\",\"_media_example.md\":\"3ba96aee\",\"awesome.md\":\"a3448d4a\",\"cdn.md\":\"41901784\",\"configuration.md\":\"7849815b\",\"cover.md\":\"7957a4d0\",\"custom-navbar.md\":\"24f831fc\",\"deploy.md\":\"eb04336f\",\"embed-files.md\":\"60c4158f\",\"helpers.md\":\"b8458541\",\"index.md\":\"f724db42\",\"language-highlight.md\":\"9da04c19\",\"markdown.md\":\"e299325f\",\"more-pages.md\":\"09b7b909\",\"my404.md\":\"a9324490\",\"plugins.md\":\"90acd342\",\"pwa.md\":\"14e2f242\",\"quickstart.md\":\"e864039f\",\"ssr.md\":\"91ee40e6\",\"themes.md\":\"3d777d06\",\"vue.md\":\"1ca28782\",\"write-a-plugin.md\":\"3a443903\"}")</script>
+    <script type="module" async src="/assets/app.fbe85f26.js"></script>
+    
+  </body>
+</html>

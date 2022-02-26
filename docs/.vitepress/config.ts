@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "docsify",
   description: "Just playing around.",
+  base: "/docsify-vitepress/",
   themeConfig: {
     // Type is `DefaultTheme.Config`
     nav: [

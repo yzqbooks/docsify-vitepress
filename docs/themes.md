@@ -21,7 +21,7 @@
 如果你有其他想法或者想开发别的主题，欢迎提 [PR](https://github.com/docsifyjs/docsify/pulls)。
 
 #### 点击切换主题
-
+```html
 
 <div class="demo-theme-preview">
   <a data-theme="vue">vue.css</a>
@@ -41,6 +41,7 @@
     cursor: pointer;
   }
 </style>
+
  <script>
     var preview = Docsify.dom.find('.demo-theme-preview');
     var themes = Docsify.dom.findAll('[rel="stylesheet"]');
@@ -52,7 +53,7 @@
       });
     };
   </script>
-
+```
 
 ## 其他主题
 

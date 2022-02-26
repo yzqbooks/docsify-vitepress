@@ -26,7 +26,7 @@ docs/zh-cn/guide.md   => http://domain.com/zh-cn/guide
 
 默认情况下，侧边栏会根据当前文档的标题生成目录。也可以设置文档链接，通过 Markdown 文件生成，效果如当前的文档的侧边栏。
 
-首先配置 `loadSidebar` 选项，具体配置规则见[配置项#loadSidebar](zh-cn/configuration.md#loadsidebar)。
+首先配置 `loadSidebar` 选项，具体配置规则见[配置项#loadSidebar](configuration.md#loadsidebar)。
 
 ```html
 <script>
@@ -63,7 +63,7 @@ docs/zh-cn/guide.md   => http://domain.com/zh-cn/guide
 
 ## 显示目录
 
-自定义侧边栏同时也可以开启目录功能。设置 `subMaxLevel` 配置项，具体介绍见 [配置项#sub-max-level](zh-cn/configuration#sub-max-level)。
+自定义侧边栏同时也可以开启目录功能。设置 `subMaxLevel` 配置项，具体介绍见 [配置项#sub-max-level](configuration#sub-max-level)。
 
 ```html
 <script>

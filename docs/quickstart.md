@@ -22,11 +22,11 @@ docsify init ./docs
 - `README.md` 会做为主页内容渲染
 - `.nojekyll` 用于阻止 GitHub Pages 会忽略掉下划线开头的文件
 
-直接编辑 `docs/README.md` 就能更新网站内容，当然也可以[写多个页面](zh-cn/more-pages.md)。
+直接编辑 `docs/README.md` 就能更新网站内容，当然也可以[写多个页面](more-pages.md)。
 
 ## 本地预览网站
 
-运行一个本地服务器通过 `docsify serve` 可以方便的预览效果，而且提供 LiveReload 功能，可以让实时的预览。默认访问 http://localhost:3000 。
+运行一个本地服务器通过 `docsify serve` 可以方便的预览效果，而且提供 LiveReload 功能，可以让实时的预览。默认访问 `http://localhost:3000` 。
 
 ```bash
 docsify serve docs

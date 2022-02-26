@@ -59,7 +59,7 @@ _index.html_
 
 ## 封面作为首页
 
-通常封面和首页是同时出现的，当然你也是当封面独立出来通过设置[onlyCover 选项](zh-cn/configuration.md#onlycover)。
+通常封面和首页是同时出现的，当然你也是当封面独立出来通过设置[onlyCover 选项](./configuration.md#onlycover)。
 
 ## 多个封面
 

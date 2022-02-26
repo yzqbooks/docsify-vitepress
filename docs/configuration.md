@@ -58,7 +58,7 @@ window.$docsify = {
 - 类型：`Boolean|String`
 - 默认值: `false`
 
-加载自定义导航栏，参考[定制导航栏](zh-cn/custom-navbar.md) 了解用法。设置为 `true` 后会加载 `_navbar.md` 文件，也可以自定义加载的文件名。
+加载自定义导航栏，参考[定制导航栏](custom-navbar.md) 了解用法。设置为 `true` 后会加载 `_navbar.md` 文件，也可以自定义加载的文件名。
 
 ```js
 window.$docsify = {
@@ -75,7 +75,7 @@ window.$docsify = {
 - 类型：`Boolean|String`
 - 默认值: `false`
 
-加载自定义侧边栏，参考[多页文档](zh-cn/more-pages.md)。设置为 `true` 后会加载 `_sidebar.md` 文件，也可以自定义加载的文件名。
+加载自定义侧边栏，参考[多页文档](more-pages.md)。设置为 `true` 后会加载 `_sidebar.md` 文件，也可以自定义加载的文件名。
 
 ```js
 window.$docsify = {
@@ -155,7 +155,7 @@ window.$docsify = {
 - 类型：`Boolean|String`
 - 默认值: `false`
 
-启用[封面页](zh-cn/cover.md)。开启后是加载 `_coverpage.md` 文件，也可以自定义文件名。
+启用[封面页](cover.md)。开启后是加载 `_coverpage.md` 文件，也可以自定义文件名。
 
 ```js
 window.$docsify = {
@@ -165,12 +165,12 @@ window.$docsify = {
   coverpage: 'cover.md',
 
   // mutiple covers
-  coverpage: ['/', '/zh-cn/'],
+  coverpage: ['/', '/'],
 
   // mutiple covers and custom file name
   coverpage: {
     '/': 'cover.md',
-    '/zh-cn/': 'cover.md'
+    '/': 'cover.md'
   }
 };
 ```
@@ -212,7 +212,7 @@ window.$docsify = {
 
   // 按照路由切换
   nameLink: {
-    '/zh-cn/': '/zh-cn/',
+    '/': '/',
     '/': '/'
   }
 };
@@ -222,7 +222,7 @@ window.$docsify = {
 
 - 类型: `Object|Function`
 
-参考 [Markdown 配置](zh-cn/markdown.md)。
+参考 [Markdown 配置](markdown.md)。
 
 ```js
 window.$docsify = {
@@ -266,7 +266,7 @@ window.$docsify = {
 window.$docsify = {
   alias: {
     '/foo/(+*)': '/bar/$1', // supports regexp
-    '/zh-cn/changelog': '/changelog',
+    '/changelog': '/changelog',
     '/changelog':
       'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
     '/.*/_sidebar.md': '/_sidebar.md' // See #301
@@ -291,7 +291,7 @@ window.$docsify = {
 
 - 类型：`Boolean`
 
-执行文档里的 script 标签里的脚本，只执行第一个 script ([demo](zh-cn/themes.md))。 如果 Vue 存在，则自动开启。
+执行文档里的 script 标签里的脚本，只执行第一个 script ([demo](themes.md))。 如果 Vue 存在，则自动开启。
 
 ```js
 window.$docsify = {

@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as t,a}from"./app.131805b1.js";const f='{"title":"\u517C\u5BB9 Vue","description":"","frontmatter":{},"headers":[],"relativePath":"vue.md"}',o={},n=a("",5),s=[n];function _(p,c,d,u,h,l){return t(),r("div",null,s)}var v=e(o,[["render",_]]);export{f as __pageData,v as default};
